@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/css/register.css">
+    <script src="https://kit.fontawesome.com/09ef2a5033.js" crossorigin="anonymous"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <img src="/public/images/mercado-libre-logo.png" alt="logo">
+    </header>
+    <form action="../views/home.html" method="post">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
+        <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario">
+        <input type="email" name="email" id="email" placeholder="E-mail">
+        <label for="date">Fecha de nacimiento</label>
+        <input type="date" name="date" id="date">
+        <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
+        <label for="perfil-usuario">Perfil del usuario</label>
+        <div id="perfil">
+            <div class="opcion">
+                <input type="radio" id="comprador" name="perfil-usuario" value="Comprador">
+                <label for="comprador">Comprador</label>
+            </div>
+            <div class="opcion">
+                <input type="radio" id="vendedor" name="perfil-usuario" value="Vendedor">
+                <label for="vendedor">Vendedor</label>
+            </div>
+        </div>
+        <label for="interes">Intereses</label>
+        <div id="intereses">
+            <div class="opcion">
+                <input type="checkbox" name="interes" id="electro" value="Electro">
+                <label for="electro">Electro</label>
+            </div>
+            <div class="opcion">
+                <input type="checkbox" name="interes" id="moda" value="Moda">
+                <label for="moda">Moda</label>
+            </div>
+            <div class="opcion">
+                <input type="checkbox" name="interes" id="hogar" value="Hogar">
+                <label for="hogar">Hogar</label>
+            </div>
+            <div class="opcion">
+                <input type="checkbox" name="interes" id="jugueteria" value="Jugueteria">
+                <label for="jugueteria">Jugueteria</label>
+            </div>
+            <div class="opcion">
+                <input type="checkbox" name="interes" id="vida-sana" value="Vida sana">
+                <label for="vida-sana">Vida sana</label>
+            </div>            
+        </div>
+        <div id="contenedor-file">            
+            <label for="foto" id="file-texto">Subir foto de perfil<i class="fa-solid fa-image"></i></label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+        </div>
+        <input type="text" id="password" name="password" placeholder="Contraseña">
+        <input type="text" id="confirm-password" name="confirm-password" placeholder="Confirmar contraseña">
+        <div id="botones">
+            <button type="reset">Cancelar</button>
+            <button type="submit">Enviar</button>
+        </div>
+
+
+    </form>
+</body>
+</html>
